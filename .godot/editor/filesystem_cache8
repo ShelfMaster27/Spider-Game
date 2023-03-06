@@ -1,0 +1,83 @@
+2a60927148abd1d33b818b535e306557
+::res://::1677861093
+AnimatedSprite.gd::GDScript::-1::1676346447::0::1::::<>AnimatedSprite<>::
+Bar texture over.png::CompressedTexture2D::5401471430223449560::1676519138::1677861099::1::::<><>::
+Bar texture under.png::CompressedTexture2D::4773524461074631038::1676518753::1677861099::1::::<><>::
+Bigger Spider.gd::GDScript::-1::1677288817::0::1::::<>RigidBody2D<>::
+Bigger Spider.tscn::PackedScene::-1::1677288576::0::1::::<><>::res://Raycasts.gd<>res://Bigger Spider.gd<>res://Spawn Timer.gd<>res://pixil-frame-0 (23).png<>res://pixil-frame-3 (11).png<>res://pixil-frame-1 (14).png<>res://pixil-frame-2 (13).png<>res://pixil-frame-3 (12).png<>res://pixil-frame-1 (15).png<>res://pixil-frame-4 (9).png<>res://pixil-frame-2 (11).png<>res://pixil-frame-4 (8).png<>res://pixil-frame-2 (12).png<>res://pixil-frame-1 (13).png
+BiggerSpiderAnimation&Spawner.gd::GDScript::-1::1676655517::0::1::::<>AnimatedSprite<>::
+Camera's pivot.gd::GDScript::-1::1676471364::0::1::::<>Position2D<>::
+Counter(HP).tscn::PackedScene::-1::1676931653::0::1::::<><>::res://HPLabel.gd<>res://pixil-layer-Background (6).png<>res://pixil-layer-Background (5).png
+Counter.tscn::PackedScene::-1::1676557263::0::1::::<><>::res://pixil-layer-Background (6).png<>res://pixil-layer-Background (5).png
+default_env.tres::Environment::-1::1677335587::0::1::::<><>::
+Enemy.gd::GDScript::-1::1677171696::0::1::::<>Node2D<>::
+Game.gd::GDScript::-1::1677293860::0::1::::<>Node2D<>::
+Game.tscn::PackedScene::-1::1677335587::0::1::::<><>::res://Spooder web.png<>res://spider walking right animation 1.png<>res://spider walking right animation 2.png<>res://spider walking right animation 3.png<>res://spider walking right animation 4.png<>res://spider walking right animation 5.png<>res://AnimatedSprite.gd<>res://Player.gd<>res://pixil-frame-0 (18)-1.png.png<>res://pixil-frame-1 (8)-1.png.png<>res://pixil-frame-2 (6)-1.png.png<>res://pixil-frame-3 (4)-1.png.png<>res://pixil-frame-4 (4)-1.png.png<>res://pixil-frame-2 (7).png<>res://pixil-frame-3 (5).png<>res://pixil-frame-1 (9).png<>res://Camera's pivot.gd<>res://pixil-frame-5 (6).png<>res://pixil-frame-1 (12).png<>res://pixil-frame-2 (10).png<>res://pixil-frame-0 (21).png<>res://pixil-frame-6 (2).png<>res://pixil-frame-4 (7).png<>res://pixil-frame-7 (2).png<>res://pixil-frame-3 (9).png<>res://Health.gd<>res://pixil-layer-Background (6).png<>res://Bigger Spider.tscn<>res://ScreenShake.gd<>res://pixil-frame-2 (11).png<>res://pixil-frame-1 (13).png<>res://pixil-frame-0 (23).png<>res://pixil-layer-Background (5).png<>res://Interface/HealthBar.gd<>res://Bar texture over.png<>res://Interface/Interface.gd<>res://Bar texture under.png<>res://pixil-layer-Background (9).png<>res://hp-pixilart.png<>res://pixil-layer-Background (7).png<>res://pixil-frame-2 (13).png<>res://pixil-frame-3 (11).png<>res://pixil-frame-1 (15).png<>res://pixil-frame-2 (12).png<>res://pixil-frame-1 (14).png<>res://pixil-frame-4 (8).png<>res://pixil-frame-3 (12).png<>res://pixil-frame-4 (9).png<>res://Bigger Spider.gd<>res://Game.gd<>res://Spawn Timer.gd<>res://HPLabel.gd<>res://Player Start Position.gd<>res://pixil-frame-1 (16).png<>res://pixil-frame-0 (26).png<>res://Raycasts.gd
+Health Under.tscn::PackedScene::-1::1676605208::0::1::::<><>::res://pixil-layer-Background (9).png
+Health.gd::GDScript::-1::1676516041::0::1::::<>Node<>::
+HP label.gd::GDScript::-1::1676927884::0::1::::<>Label<>::
+hp-pixilart.png::CompressedTexture2D::2958257493076187129::1676584116::1677861099::1::::<><>::
+HPLabel.gd::GDScript::-1::1677182439::0::1::::<>Label<>::
+icon.png::CompressedTexture2D::7052176434345701727::1676320760::1677861099::1::::<><>::
+KinematicBody2D.gd::GDScript::-1::1676409244::0::1::::<>KinematicBody2D<>::
+lightgame.png::CompressedTexture2D::6292907624522708837::1677108990::1677861100::1::::<><>::
+pixil-frame-0 (18)-1.png.png::CompressedTexture2D::8965235122850404153::1676396320::1677861099::1::::<><>::
+pixil-frame-0 (21).png::CompressedTexture2D::1204062046510881957::1676505815::1677861099::1::::<><>::
+pixil-frame-0 (23).png::CompressedTexture2D::8227429052740569884::1676598975::1677861099::1::::<><>::
+pixil-frame-0 (25).png::CompressedTexture2D::4372635830561028174::1677108645::1677861100::1::::<><>::
+pixil-frame-0 (26).png::CompressedTexture2D::2388146986287487879::1677111350::1677861100::1::::<><>::
+pixil-frame-1 (8)-1.png.png::CompressedTexture2D::2231653223687663159::1676396443::1677861100::1::::<><>::
+pixil-frame-1 (9).png::CompressedTexture2D::6715848879014864104::1676404438::1677861100::1::::<><>::
+pixil-frame-1 (12).png::CompressedTexture2D::1190122106361999458::1676505822::1677861100::1::::<><>::
+pixil-frame-1 (13).png::CompressedTexture2D::2609362870463148685::1676601891::1677861100::1::::<><>::
+pixil-frame-1 (14).png::CompressedTexture2D::6181243791384890177::1676611067::1677861100::1::::<><>::
+pixil-frame-1 (15).png::CompressedTexture2D::3321899001374285818::1676611913::1677861100::1::::<><>::
+pixil-frame-1 (16).png::CompressedTexture2D::8467727390912317745::1677112003::1677861100::1::::<><>::
+pixil-frame-2 (6)-1.png.png::CompressedTexture2D::7194257698822727423::1676396598::1677861100::1::::<><>::
+pixil-frame-2 (7).png::CompressedTexture2D::3920490827398258584::1676404497::1677861100::1::::<><>::
+pixil-frame-2 (10).png::CompressedTexture2D::8879161968847086872::1676505826::1677861100::1::::<><>::
+pixil-frame-2 (11).png::CompressedTexture2D::932827631182400998::1676601923::1677861100::1::::<><>::
+pixil-frame-2 (12).png::CompressedTexture2D::530707558372504976::1676611132::1677861100::1::::<><>::
+pixil-frame-2 (13).png::CompressedTexture2D::2401570789915333033::1676611956::1677861100::1::::<><>::
+pixil-frame-2 (14).png::CompressedTexture2D::4405372551493280875::1677112611::1677861100::1::::<><>::
+pixil-frame-3 (4)-1.png.png::CompressedTexture2D::891713158440880379::1676396715::1677861098::1::::<><>::
+pixil-frame-3 (5).png::CompressedTexture2D::577290597287072990::1676404530::1677861098::1::::<><>::
+pixil-frame-3 (9).png::CompressedTexture2D::3674929607634218556::1676505829::1677861098::1::::<><>::
+pixil-frame-3 (10).png::CompressedTexture2D::6173385415250311353::1676611177::1677861098::1::::<><>::
+pixil-frame-3 (11).png::CompressedTexture2D::6189246231348305453::1676611699::1677861098::1::::<><>::
+pixil-frame-3 (12).png::CompressedTexture2D::5112824834564509699::1676611997::1677861098::1::::<><>::
+pixil-frame-4 (4)-1.png.png::CompressedTexture2D::1835438599344578736::1676396821::1677861098::1::::<><>::
+pixil-frame-4 (7).png::CompressedTexture2D::2082998569922261096::1676505845::1677861098::1::::<><>::
+pixil-frame-4 (8).png::CompressedTexture2D::6821484634806330442::1676611203::1677861098::1::::<><>::
+pixil-frame-4 (9).png::CompressedTexture2D::7211140541077701851::1676612054::1677861098::1::::<><>::
+pixil-frame-5 (6).png::CompressedTexture2D::3135534663500305085::1676505850::1677861099::1::::<><>::
+pixil-frame-6 (2).png::CompressedTexture2D::2973172461088149975::1676505854::1677861099::1::::<><>::
+pixil-frame-7 (2).png::CompressedTexture2D::4563116997865810854::1676505857::1677861099::1::::<><>::
+pixil-layer-Background (5).png::CompressedTexture2D::950853000269477320::1676521909::1677861099::1::::<><>::
+pixil-layer-Background (6).png::CompressedTexture2D::4878807059891059022::1676555642::1677861099::1::::<><>::
+pixil-layer-Background (7).png::CompressedTexture2D::6782202720413848518::1676565512::1677861099::1::::<><>::
+pixil-layer-Background (9).png::CompressedTexture2D::8001573753724856326::1676585871::1677861099::1::::<><>::
+Player Start Position.gd::GDScript::-1::1676674416::0::1::::<>Position2D<>::
+Player.gd::GDScript::-1::1677258066::0::1::::<>KinematicBody2D<>::
+Player.tscn::PackedScene::-1::1676661989::0::1::::<><>::res://Player.gd<>res://AnimatedSprite.gd<>res://Camera's pivot.gd<>res://Health.gd<>res://pixil-frame-3 (5).png<>res://pixil-frame-0 (18)-1.png.png<>res://pixil-frame-3 (4)-1.png.png<>res://pixil-frame-4 (4)-1.png.png<>res://pixil-frame-1 (9).png<>res://spider walking right animation 3.png<>res://spider walking right animation 4.png<>res://spider walking right animation 1.png<>res://pixil-frame-2 (6)-1.png.png<>res://pixil-frame-2 (7).png<>res://spider walking right animation 2.png<>res://spider walking right animation 5.png<>res://pixil-frame-1 (8)-1.png.png
+Raycasts.gd::GDScript::-1::1677169747::0::1::::<>Node2D<>::
+RigidBody2D.gd::GDScript::-1::1676479096::0::1::::<>StaticBody2D<>::
+ScreenShake.gd::GDScript::-1::1676603229::0::1::::<>Node<>::
+Spawn Timer.gd::GDScript::-1::1677280543::0::1::::<>Timer<>::
+Spawner for bigger spider.gd::GDScript::-1::1676653883::0::1::::<>Position2D<>::
+Spawner for bigger spider.tscn::PackedScene::-1::1676654355::0::1::::<><>::res://Spawner for bigger spider.gd
+spider walking right animation 1.png::CompressedTexture2D::5316067567212148639::1676342210::1677861099::1::::<><>::
+spider walking right animation 2.png::CompressedTexture2D::6486342378340042931::1676342228::1677861099::1::::<><>::
+spider walking right animation 3.png::CompressedTexture2D::3920749006681204141::1676342243::1677861099::1::::<><>::
+spider walking right animation 4.png::CompressedTexture2D::8288011928992267448::1676342247::1677861099::1::::<><>::
+spider walking right animation 5.png::CompressedTexture2D::7786481851449724940::1676342255::1677861099::1::::<><>::
+Spooder web.png::CompressedTexture2D::2442924764054834286::1676321115::1677861099::1::::<><>::
+TextureProgress.tscn::PackedScene::-1::1676557307::0::1::::<><>::res://Bar texture under.png<>res://Bar texture over.png
+::res://Interface/::1676997954
+Bars.tscn::PackedScene::-1::1676563252::0::1::::<><>::res://pixil-layer-Background (6).png<>res://pixil-layer-Background (5).png<>res://Bar texture under.png<>res://Bar texture over.png
+Energy Bar.tscn::PackedScene::-1::1676603627::0::1::::<><>::res://Bar texture over.png<>res://pixil-layer-Background (7).png<>res://pixil-layer-Background (9).png
+HealthBar.gd::GDScript::-1::1676997954::0::1::::<>HBoxContainer<>::
+Interface.gd::GDScript::-1::1676603229::0::1::::<>Control<>::
+Interface.tscn::PackedScene::-1::1676604021::0::1::::<><>::res://Interface/Interface.gd<>res://pixil-layer-Background (6).png<>res://pixil-layer-Background (5).png<>res://Bar texture under.png<>res://Bar texture over.png<>res://Interface/HealthBar.gd<>res://hp-pixilart.png<>res://pixil-layer-Background (9).png<>res://pixil-layer-Background (7).png
+Life Bar.tscn::PackedScene::-1::1676612199::0::1::::<><>::res://Interface/HealthBar.gd<>res://pixil-layer-Background (9).png<>res://Bar texture under.png
+TextureProgress.tscn::PackedScene::-1::1676556447::0::1::::<><>::res://Bar texture under.png<>res://Bar texture over.png

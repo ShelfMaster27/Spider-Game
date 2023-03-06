@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Interface/HealthBar.gd" type="Script" id=2]
+[ext_resource path="res://pixil-layer-Background (9).png" type="Texture" id=3]
+[ext_resource path="res://Bar texture under.png" type="Texture" id=4]
+
+[node name="Life Bar" type="HBoxContainer"]
+rect_min_size = Vector2( 71, 32 )
+rect_scale = Vector2( 5, 5 )
+alignment = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Update Tween" type="Tween" parent="."]
+
+[node name="Pulse Tween" type="Tween" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_left = 21.0
+margin_right = 53.0
+margin_bottom = 32.0
+
+[node name="Health Over" type="TextureProgress" parent="CenterContainer"]
+margin_right = 32.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( 360, 360 )
+rect_clip_content = true
+texture_under = ExtResource( 3 )
+texture_over = ExtResource( 4 )
+texture_progress = ExtResource( 3 )
+tint_under = Color( 0.317647, 0.317647, 0.317647, 1 )
+tint_progress = Color( 0.156863, 0.831373, 0.262745, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Health Under" type="TextureProgress" parent="CenterContainer"]
+margin_right = 32.0
+margin_bottom = 32.0
+value = 100.0
+texture_progress = ExtResource( 3 )
+tint_progress = Color( 0.843137, 0.290196, 0.290196, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

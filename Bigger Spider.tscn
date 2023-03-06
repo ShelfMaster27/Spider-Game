@@ -1,0 +1,113 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Raycasts.gd" type="Script" id=1]
+[ext_resource path="res://Bigger Spider.gd" type="Script" id=2]
+[ext_resource path="res://Spawn Timer.gd" type="Script" id=3]
+[ext_resource path="res://pixil-frame-0 (23).png" type="Texture" id=4]
+[ext_resource path="res://pixil-frame-3 (11).png" type="Texture" id=5]
+[ext_resource path="res://pixil-frame-1 (14).png" type="Texture" id=6]
+[ext_resource path="res://pixil-frame-2 (13).png" type="Texture" id=7]
+[ext_resource path="res://pixil-frame-3 (12).png" type="Texture" id=8]
+[ext_resource path="res://pixil-frame-1 (15).png" type="Texture" id=9]
+[ext_resource path="res://pixil-frame-4 (9).png" type="Texture" id=10]
+[ext_resource path="res://pixil-frame-2 (11).png" type="Texture" id=11]
+[ext_resource path="res://pixil-frame-4 (8).png" type="Texture" id=12]
+[ext_resource path="res://pixil-frame-2 (12).png" type="Texture" id=13]
+[ext_resource path="res://pixil-frame-1 (13).png" type="Texture" id=14]
+
+[sub_resource type="PackedScene" id=3]
+_bundled = {
+"conn_count": 0,
+"conns": PoolIntArray(  ),
+"editable_instances": [  ],
+"names": PoolStringArray(  ),
+"node_count": 0,
+"node_paths": [  ],
+"nodes": PoolIntArray(  ),
+"variants": [  ],
+"version": 2
+}
+
+[sub_resource type="SpriteFrames" id=1]
+resource_local_to_scene = true
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "up_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "move left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "move right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 6.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 31.4321
+
+[node name="Bigger Spider" type="RigidBody2D"]
+position = Vector2( 1002, 296 )
+collision_layer = 2
+collision_mask = 4
+gravity_scale = 0.0
+script = ExtResource( 2 )
+BiggerSpider = SubResource( 3 )
+
+[node name="Bigger Spider animation" type="AnimatedSprite" parent="."]
+scale = Vector2( 7.80743, 5.63129 )
+frames = SubResource( 1 )
+animation = "up_down"
+playing = true
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.466095, 4.66096 )
+shape = SubResource( 2 )
+
+[node name="Raycasts" type="Node2D" parent="."]
+position = Vector2( 226.832, 83.5879 )
+script = ExtResource( 1 )
+
+[node name="RayCast2D" type="RayCast2D" parent="Raycasts"]
+position = Vector2( -226.358, -82.735 )
+enabled = true
+cast_to = Vector2( 0, 100 )
+
+[node name="RayCast2D2" type="RayCast2D" parent="Raycasts"]
+position = Vector2( -225.925, -82.839 )
+rotation = 1.5708
+enabled = true
+cast_to = Vector2( 0, 100 )
+
+[node name="RayCast2D3" type="RayCast2D" parent="Raycasts"]
+position = Vector2( -226.408, -83.6353 )
+rotation = 3.14159
+enabled = true
+cast_to = Vector2( 0, 100 )
+
+[node name="RayCast2D4" type="RayCast2D" parent="Raycasts"]
+position = Vector2( -226.761, -82.8726 )
+rotation = -1.5708
+enabled = true
+cast_to = Vector2( 0, 100 )
+
+[node name="Position2D" type="Position2D" parent="."]
+
+[node name="Spawn Timer" type="Timer" parent="."]
+wait_time = 15.0
+autostart = true
+script = ExtResource( 3 )
+
+[connection signal="spawn" from="Spawn Timer" to="." method="_on_Spawn_Timer_spawn"]
+[connection signal="timeout" from="Spawn Timer" to="." method="_on_Spawn_Timer_timeout"]
