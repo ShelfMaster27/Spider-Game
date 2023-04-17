@@ -18,7 +18,7 @@
 [ext_resource path="res://spider walking right animation 5.png" type="Texture" id=16]
 [ext_resource path="res://pixil-frame-1 (8)-1.png.png" type="Texture" id=17]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 resource_local_to_scene = true
 animations = [ {
 "frames": [ ExtResource( 12 ) ],
@@ -42,19 +42,19 @@ animations = [ {
 "speed": 10.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 13.5552, 9.51263 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 1200.09, 10 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 1229.89, 10 )
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 12.6925, 837.07 )
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 43.532, 852.918 )
 
 [node name="Player" type="KinematicBody2D"]
@@ -74,9 +74,9 @@ remote_path = NodePath("../Pivot/Camera Offset/Camera2D")
 light_mask = 2
 position = Vector2( 0.261322, 0.535942 )
 scale = Vector2( 0.339213, 0.388572 )
-frames = SubResource( 2 )
+frames = SubResource( 1 )
 animation = "move up_down"
-frame = 2
+frame = 1
 playing = true
 script = ExtResource( 2 )
 
@@ -84,7 +84,7 @@ script = ExtResource( 2 )
 light_mask = 2
 position = Vector2( 0.0845947, -0.121094 )
 scale = Vector2( 0.0621245, 0.108003 )
-shape = SubResource( 10 )
+shape = SubResource( 2 )
 
 [node name="Pivot" type="Position2D" parent="."]
 position = Vector2( 43.2765, 24.562 )
@@ -119,22 +119,22 @@ collision_mask = 2
 [node name="Wall 1" type="CollisionShape2D" parent="Pivot/Camera2D/StaticBody2D"]
 light_mask = 2
 position = Vector2( -1134.31, -1252 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Wall 2" type="CollisionShape2D" parent="Pivot/Camera2D/StaticBody2D"]
 light_mask = 2
 position = Vector2( -1154.45, 100.168 )
-shape = SubResource( 5 )
+shape = SubResource( 4 )
 
 [node name="Wall 3" type="CollisionShape2D" parent="Pivot/Camera2D/StaticBody2D"]
 light_mask = 2
 position = Vector2( -2278.62, -544.203 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 [node name="Wall 4" type="CollisionShape2D" parent="Pivot/Camera2D/StaticBody2D"]
 light_mask = 2
 position = Vector2( 39.8977, -566.245 )
-shape = SubResource( 7 )
+shape = SubResource( 6 )
 
 [node name="Health" type="Node" parent="."]
 script = ExtResource( 4 )

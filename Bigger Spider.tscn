@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Raycasts.gd" type="Script" id=1]
 [ext_resource path="res://Bigger Spider.gd" type="Script" id=2]
@@ -15,22 +15,19 @@
 [ext_resource path="res://pixil-frame-2 (12).png" type="Texture" id=13]
 [ext_resource path="res://pixil-frame-1 (13).png" type="Texture" id=14]
 
-[sub_resource type="PackedScene" id=3]
-_bundled = {
-"conn_count": 0,
-"conns": PoolIntArray(  ),
-"editable_instances": [  ],
-"names": PoolStringArray(  ),
-"node_count": 0,
-"node_paths": [  ],
-"nodes": PoolIntArray(  ),
-"variants": [  ],
-"version": 2
-}
-
 [sub_resource type="SpriteFrames" id=1]
 resource_local_to_scene = true
 animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "move right",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 14 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "up_down",
@@ -40,16 +37,6 @@ animations = [ {
 "loop": true,
 "name": "move left",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "move right",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 6.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
@@ -61,12 +48,12 @@ collision_layer = 2
 collision_mask = 4
 gravity_scale = 0.0
 script = ExtResource( 2 )
-BiggerSpider = SubResource( 3 )
 
 [node name="Bigger Spider animation" type="AnimatedSprite" parent="."]
 scale = Vector2( 7.80743, 5.63129 )
 frames = SubResource( 1 )
 animation = "up_down"
+frame = 1
 playing = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]

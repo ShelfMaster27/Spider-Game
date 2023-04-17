@@ -7,7 +7,7 @@ onready var animation = $"Bigger Spider animation"
 
 
 func _process(delta):
-	var player = get_node("/root/Game/Player") 
+	var player = get_node("/root/Main/Player") 
 	var distance = player.position - self.position
 	var move_x = distance.x
 	var move_y = distance.y
@@ -22,7 +22,7 @@ func _process(delta):
 
 
 func _physics_process(delta):
-	var player = get_node("/root/Game/Player") 
+	var player = get_node("/root/Main/Player") 
 	var distance = player.position - self.position
 	var velocity_factor = 50
 	if distance.length() < 200:
@@ -33,7 +33,7 @@ func _physics_process(delta):
 	
 
 func _ready() -> void:
-	get_node("/root/Game/Bigger Spider").visible = false
+	get_node("/root/Main/Bigger Spider").visible = false
  
 
 func _on_Spawn_Timer_spawn():
